@@ -68,6 +68,7 @@ module.exports.updateARandomUser = (req, res, next) => {
 
 module.exports.bulkUpdate = (req, res, next) => {
 	const newData = req.body.data;
+
 	newData.map((data) => {
 		users.find((user) => {
 			if (user.id === data.id) {
@@ -105,12 +106,15 @@ module.exports.bulkUpdate = (req, res, next) => {
 			}
 		});
 	});
+
 	res.send(newData);
 };
 
 module.exports.deleteAUser = (req, res, next) => {
 	const { id } = req.params;
+
 	const filter = { _id: id };
+
 	users = users.filter((user) => user.id !== Number(id));
 	res.send(users);
 };
