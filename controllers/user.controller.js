@@ -47,8 +47,10 @@ module.exports.saveARandomUser = (req, res, next) => {
 		req.body.hasOwnProperty("photoUrl")
 	) {
 		users.push(req.body);
+		res.send(users);
+	} else {
+		res.send("Missed some properties!!");
 	}
-	res.send(users);
 };
 
 module.exports.updateARandomUser = (req, res, next) => {
