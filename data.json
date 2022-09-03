@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Jake",
+    "gender": "Male",
+    "contact": "09846824",
+    "address": "London",
+    "photoUrl": "Jake Here"
+  },
+  {
+    "id": 2,
+    "name": "Harry",
+    "gender": "Male",
+    "contact": "0386394",
+    "address": "USA",
+    "photoUrl": "Harry Here"
+  },
+  {
+    "id": 3,
+    "name": "Andre",
+    "gender": "Female",
+    "contact": "028492694",
+    "address": "Japan",
+    "photoUrl": "Andre Here"
+  }
+]
